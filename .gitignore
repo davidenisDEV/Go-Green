@@ -1,0 +1,40 @@
+# --- BANCO DE DADOS (CRÍTICO - NUNCA ENVIAR) ---
+*.db
+Database/*.db
+*.sqlite3
+
+# --- ARQUIVOS DE SISTEMA E LOGS ---
+__pycache__/
+*.pyc
+.DS_Store
+*.log
+
+# --- AMBIENTE VIRTUAL ---
+venv/
+env/
+.env
+
+# --- ARQUIVOS GERADOS PELO SISTEMA (Relatórios e Testes) ---
+*.xlsx
+*.pdf
+temp_graph.png
+
+# --- IMAGENS DE UPLOAD ---
+# Ignora as fotos, mas mantem a estrutura de pastas se tiver um .gitkeep
+Web_Backend/static/uploads/*
+!Web_Backend/static/uploads/.gitkeep
+
+# --- SCRIPTS DE MANUTENÇÃO E TESTE (REMOVIDOS DO GIT) ---
+setup_seguranca.py
+user_admin.py
+verificar_imagens.py
+atualizar_banco_web.py
+check_db.py
+diagnostico_completo.py
+reparar_banco.py
+atualizar_banco_sessao.py
+atualizar_banco_v3.py
+atualizar_banco_v4.py
+
+# --- ARQUIVOS ESPECÍFICOS DO APP ---
+Desktop_App/database.py
